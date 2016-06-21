@@ -1,0 +1,638 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Open House Porto – Map</title>
+    
+    
+    <link rel="canonical" href="http://www.openhouseporto.com/en/map/">
+
+    
+    
+    <link rel="alternate" hreflang="pt" href="http://www.openhouseporto.com/map/">
+    
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="shortcut icon" href="/assets/site-icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/assets/site-icons/favicon-512.png">
+    <meta name="apple-mobile-web-app-title" content="Open House">
+    <meta name="msapplication-TileColor" content="">
+    <meta name="msapplication-TileImage" content="/assets/site-icons/favicon-512.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:image" content="http://www.openhouseporto.com/assets/site-icons/facebook-share.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/stickyfill.min.js"></script>
+    
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    
+    <script>
+      /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+      
+      grunticon(["/assets/icons/icons.data.svg.css", "/assets/icons/icons.data.png.css", "/assets/icons/icons.fallback.css"]);
+    </script>
+    <noscript><link href="/assets/icons/icons.fallback.css" rel="stylesheet"></noscript>
+
+    <link href="/assets/css/icons.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-toggle button").on('click', function(e) {
+          $('.site-header').toggleClass('menu-open');
+          $('.site-header').toggleClass('menu-closed');
+        });
+      });
+    </script>
+
+
+</head>
+
+
+  <body id="top">
+
+    
+  <header class="site-header alt-color menu-closed" role="banner">
+  <div class="header-wrapper">
+    
+    <div class="site-header-title">
+      
+      <h1 class="openhouse-title"><a href="/en/">Open House Porto</a></h1>
+      <p class="openhouse-date">June 18-19 2016</p>
+      
+    </div>
+
+    <div class="menu-toggle">
+      <button><span>Menu </span><i class="open-menu icon-menu-hamburger-white">(open)</i><i class="close-menu icon-menu-close-white">(close)</i></button>
+    </div>
+
+    <nav class="site-nav" role="navigation">
+      <ul>
+        
+        
+        
+        <li><a class="page-link" href="/en/about/">About</a></li>
+        
+        <li><a class="page-link" href="/en/places/zones/">Places</a></li>
+        
+        <li><a class="page-link" href="/en/map/">Map</a></li>
+        
+        <li><a class="page-link" href="/en/timetable/">Timetable</a></li>
+        
+        <li><a class="page-link" href="/en/plus/">Plus</a></li>
+        
+        <li><a class="page-link" href="/en/get-involved/">Get Involved</a></li>
+        
+        
+        <li class="language-switcher">
+          
+          <a href="/map/">PT</a>
+          
+        </li>
+        
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+
+    <div class="page-content" role="main">
+      
+
+
+<header class="page header-page activity">
+  <h2>Map</h2>
+</header>
+
+<div class="page map-page">
+  <div id="view1">
+    <script src="/assets/js/map.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+    <script src="/assets/js/richmarker-min.js"></script>
+    <script type="text/javascript">
+      var markers =
+        [
+          
+          
+          {
+            "lat": 41.15988,
+            "lng": -8.58082,
+            "number": "25",
+            "title": "Old Industrial Slaughterhouse of Porto",
+            "url": "/en/places/antigo-matadouro-municipal-do-porto/"
+          },
+          
+          {
+            "lat": 41.14111,
+            "lng": -8.6109,
+            "number": "40",
+            "title": "Lada Studios",
+            "url": "/en/places/ateliers-da-lada/"
+          },
+          
+          {
+            "lat": 41.15314,
+            "lng": -8.56673,
+            "number": "27",
+            "title": "Lagarteiro Neighbourhood",
+            "url": "/en/places/bairro-do-lagarteiro/"
+          },
+          
+          {
+            "lat": 41.15394,
+            "lng": -8.65216,
+            "number": "16",
+            "title": "Lordelo do Ouro Neighbourhood",
+            "url": "/en/places/bairro-lordelo-do-ouro/"
+          },
+          
+          {
+            "lat": 41.16647,
+            "lng": -8.59521,
+            "number": "24",
+            "title": "Costa Cabral Block",
+            "url": "/en/places/bloco-de-costa-cabral/"
+          },
+          
+          {
+            "lat": 41.14902,
+            "lng": -8.60977,
+            "number": "32",
+            "title": "Corner Block",
+            "url": "/en/places/bloco-de-gaveto/"
+          },
+          
+          {
+            "lat": 41.14795,
+            "lng": -8.61069,
+            "number": "30",
+            "title": "Caixa Geral de Depósitos / Culturgest",
+            "url": "/en/places/caixa-geral-de-depositos-culturgest/"
+          },
+          
+          {
+            "lat": 41.12995,
+            "lng": -8.60659,
+            "number": "46",
+            "title": "Vila Nova de Gaia City Hall",
+            "url": "/en/places/camara-municipal-de-gaia/"
+          },
+          
+          {
+            "lat": 41.18322,
+            "lng": -8.68316,
+            "number": "11",
+            "title": "Matosinhos City Hall",
+            "url": "/en/places/camara-municipal-de-matosinhos/"
+          },
+          
+          {
+            "lat": 41.14987,
+            "lng": -8.61062,
+            "number": "31",
+            "title": "Porto City Hall",
+            "url": "/en/places/camara-municipal-do-porto/"
+          },
+          
+          {
+            "lat": 41.16067,
+            "lng": -8.60411,
+            "number": "23",
+            "title": "Marques da Silva Home-Studio",
+            "url": "/en/places/casa-atelier-marques-da-silva/"
+          },
+          
+          {
+            "lat": 41.13315,
+            "lng": -8.60757,
+            "number": "45",
+            "title": "Barbot House / Casa da Cultura",
+            "url": "/en/places/casa-barbot-casa-da-cultura/"
+          },
+          
+          {
+            "lat": 41.18229,
+            "lng": -8.69128,
+            "number": "8",
+            "title": "Casa da Arquitectura",
+            "url": "/en/places/casa-da-arquitectura/"
+          },
+          
+          {
+            "lat": 41.20301,
+            "lng": -8.71506,
+            "number": "2",
+            "title": "Boa Nova Tea House",
+            "url": "/en/places/casa-de-cha-da-boa-nova/"
+          },
+          
+          {
+            "lat": 41.15955,
+            "lng": -8.65649,
+            "number": "14",
+            "title": "Casa de Serralves",
+            "url": "/en/places/casa-de-serralves/"
+          },
+          
+          {
+            "lat": 41.18759,
+            "lng": -8.68879,
+            "number": "9",
+            "title": "Patio Houses",
+            "url": "/en/places/casas-patio/"
+          },
+          
+          {
+            "lat": 41.16251,
+            "lng": -8.62167,
+            "number": "21",
+            "title": "Espírito Santo Cenacle",
+            "url": "/en/places/cenaculo-do-espirito-santo/"
+          },
+          
+          {
+            "lat": 41.14355,
+            "lng": -8.64694,
+            "number": "49",
+            "title": "CIPA",
+            "url": "/en/places/centro-interpretativo-patrimonio-afurada/"
+          },
+          
+          {
+            "lat": 41.14552,
+            "lng": -8.60704,
+            "number": "35",
+            "title": "Batalha Cinema",
+            "url": "/en/places/cinema-batalha/"
+          },
+          
+          {
+            "lat": 41.18804,
+            "lng": -8.67293,
+            "number": "12",
+            "title": "Housing Group of Seara",
+            "url": "/en/places/conjunto-habitacional-da-seara/"
+          },
+          
+          {
+            "lat": 41.16988,
+            "lng": -8.66456,
+            "number": "13",
+            "title": "Aldoar Cooperatives",
+            "url": "/en/places/cooperativas-de-aldoar/"
+          },
+          
+          {
+            "lat": 41.08493,
+            "lng": -8.65194,
+            "number": "51",
+            "title": "Heliântia Building",
+            "url": "/en/places/edificio-heliantia/"
+          },
+          
+          {
+            "lat": 41.15567,
+            "lng": -8.60225,
+            "number": "22",
+            "title": "Bricklayers Cooperative / Miradouro Building",
+            "url": "/en/places/edificio-miradouro/"
+          },
+          
+          {
+            "lat": 41.15958,
+            "lng": -8.62501,
+            "number": "20",
+            "title": "Parnaso Building",
+            "url": "/en/places/edificio-parnaso/"
+          },
+          
+          {
+            "lat": 41.15722,
+            "lng": -8.65978,
+            "number": "15",
+            "title": "International French School of Porto",
+            "url": "/en/places/escola-francesa/"
+          },
+          
+          {
+            "lat": 41.11361,
+            "lng": -8.60938,
+            "number": "48",
+            "title": "Cedro Primary School",
+            "url": "/en/places/escola-primaria-do-cedro/"
+          },
+          
+          {
+            "lat": 41.17418,
+            "lng": -8.57334,
+            "number": "26",
+            "title": "Nau Vitória Metro Station",
+            "url": "/en/places/estacao-de-metro-nau-vitoria/"
+          },
+          
+          {
+            "lat": 41.14519,
+            "lng": -8.61105,
+            "number": "37",
+            "title": "São Bento Metro Station",
+            "url": "/en/places/estacao-de-metro-s-bento/"
+          },
+          
+          {
+            "lat": 41.2014,
+            "lng": -8.71181,
+            "number": "3",
+            "title": "Leça da Palmeira Lighthouse",
+            "url": "/en/places/farol-de-leca-da-palmeira/"
+          },
+          
+          {
+            "lat": 41.14807,
+            "lng": -8.61208,
+            "number": "29",
+            "title": "Comércio do Porto Garage",
+            "url": "/en/places/garagem-comercio-do-porto/"
+          },
+          
+          {
+            "lat": 41.14792,
+            "lng": -8.60665,
+            "number": "34",
+            "title": "Grand Hotel Porto",
+            "url": "/en/places/grande-hotel-do-porto/"
+          },
+          
+          {
+            "lat": 41.14674,
+            "lng": -8.61816,
+            "number": "28",
+            "title": "Santo António Hospital",
+            "url": "/en/places/hospital-de-santo-antonio/"
+          },
+          
+          {
+            "lat": 41.14714,
+            "lng": -8.63233,
+            "number": "18",
+            "title": "Vincci Hotel",
+            "url": "/en/places/hotel-vincci-porto/"
+          },
+          
+          {
+            "lat": 41.13681,
+            "lng": -8.59575,
+            "number": "44",
+            "title": "Eng. Edgar Cardoso Laboratory",
+            "url": "/en/places/laboratorio-eng-edgar-cardoso/"
+          },
+          
+          {
+            "lat": 41.13815,
+            "lng": -8.60818,
+            "number": "41",
+            "title": "Serra do Pilar Monastery",
+            "url": "/en/places/mosteiro-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.14895,
+            "lng": -8.60817,
+            "number": "33",
+            "title": "Bolhão Palace",
+            "url": "/en/places/palacio-do-bolhao/"
+          },
+          
+          {
+            "lat": 41.19713,
+            "lng": -8.68678,
+            "number": "6",
+            "title": "Pool at Conceição Farm",
+            "url": "/en/places/piscina-da-quinta-da-conceicao/"
+          },
+          
+          {
+            "lat": 41.19305,
+            "lng": -8.70732,
+            "number": "4",
+            "title": "Tidal Swimming Pool",
+            "url": "/en/places/piscina-das-mares/"
+          },
+          
+          {
+            "lat": 41.21255,
+            "lng": -8.65946,
+            "number": "1",
+            "title": "PMO and PCC of Metro do Porto",
+            "url": "/en/places/pmo-e-pcc-metro-do-porto/"
+          },
+          
+          {
+            "lat": 41.13783,
+            "lng": -8.597,
+            "number": "43",
+            "title": "São João Bridge",
+            "url": "/en/places/ponte-sao-joao/"
+          },
+          
+          {
+            "lat": 41.13701,
+            "lng": -8.60667,
+            "number": "42",
+            "title": "Artillery Regiment of Serra do Pilar",
+            "url": "/en/places/quartel-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.18541,
+            "lng": -8.68492,
+            "number": "10",
+            "title": "Four Houses",
+            "url": "/en/places/quatro-casas/"
+          },
+          
+          {
+            "lat": 41.19558,
+            "lng": -8.68676,
+            "number": "5",
+            "title": "Conceição Farm",
+            "url": "/en/places/quinta-da-conceicao/"
+          },
+          
+          {
+            "lat": 41.13033,
+            "lng": -8.60853,
+            "number": "47",
+            "title": "General Torres Water Reservoir",
+            "url": "/en/places/reservatorio-de-general-torres/"
+          },
+          
+          {
+            "lat": 41.09368,
+            "lng": -8.62339,
+            "number": "50",
+            "title": "Boa Nova Seminar",
+            "url": "/en/places/seminario-da-boa-nova/"
+          },
+          
+          {
+            "lat": 41.14473,
+            "lng": -8.60744,
+            "number": "36",
+            "title": "São João National Theatre",
+            "url": "/en/places/teatro-nacional-s-joao/"
+          },
+          
+          {
+            "lat": 41.17725,
+            "lng": -8.70189,
+            "number": "7",
+            "title": "Cruise Terminal of the Port of Leixões",
+            "url": "/en/places/terminal-de-cruzeiros-do-porto-de-leixoes/"
+          },
+          
+          {
+            "lat": 41.15461,
+            "lng": -8.62677,
+            "number": "19",
+            "title": "Montepio Geral Residential Tower",
+            "url": "/en/places/torre-de-habitacao-montepio-geral/"
+          },
+          
+          {
+            "lat": 41.16001,
+            "lng": -8.64521,
+            "number": "17",
+            "title": "Burgo Tower",
+            "url": "/en/places/torre-do-burgo/"
+          },
+          
+          {
+            "lat": 41.14301,
+            "lng": -8.61167,
+            "number": "38",
+            "title": "Tower of the 24",
+            "url": "/en/places/torre-dos-24/"
+          },
+          
+          {
+            "lat": 41.14272,
+            "lng": -8.61225,
+            "number": "39",
+            "title": "Medieval Tower of Porto",
+            "url": "/en/places/torre-medieval/"
+          }
+          
+          
+        ];
+      var centerLat = 41.14753;
+      var centerLng = -8.636337;
+
+      window.onload = initMap;
+    </script>
+    <div id="map" style="width: 100%;"></div>
+  </div>
+  
+  
+  <p><a href="/uploads/openhouseporto2016-mapa.pdf" class="map-download" target="_blank">Download the Map as a PDF&nbsp;&#10132;</a></p>
+  
+
+</div>
+
+
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+  <div class="wrapper">
+
+    <div class="footer-partners">
+      <div class="footer-logos">
+        <div>A Part of</div>
+        <p class="footer-logo icon-openhouseworldwide-white"><a href="http://www.openhouseworldwide.org/" target="_blank">Open House Worldwide</a></p>
+      </div>  
+      <div class="footer-logos">
+        <p class="footer-logo icon-casadaarquitectura-white"><a href="http://www.casadaarquitectura.pt/" target="_blank">Casa da Arquitectura</a></p>
+        <p class="footer-logo icon-trienal-white"><a href="http://www.trienaldelisboa.com/" target="_blank"></a></p>
+        <p class="footer-logo icon-cmporto-white"><a href="http://www.cm-porto.pt/" target="_blank">Câmara Municipal do Porto</a></p>
+        <p class="footer-logo icon-cmgaia-white"><a href="http://www.cm-gaia.pt/" target="_blank">Câmara Municipal de Vila Nova de Gaia</a></p>
+        <p class="footer-logo icon-cmmatosinhos-white"><a href="http://www.cm-matosinhos.pt/" target="_blank">Câmara Municipal de Matosinhos</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-info">
+      <div class="footer-contact">
+        <ul class="social-links">
+          
+          
+          
+          
+          
+        </ul>
+        
+        <p class="contact-link" id="email"><a href="mailto:openhouseporto@casadaarquitectura.pt">openhouseporto@casadaarquitectura.pt</a></p>
+        
+        
+      </div>
+      <div class="footer-copyright">
+        <small>Copyright 2016 Open House Porto</small>
+      </div>
+    </div>
+  
+  </div>
+</footer>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-64171664-2', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+  </body>
+
+</html>

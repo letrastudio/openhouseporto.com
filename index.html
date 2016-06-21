@@ -27,10 +27,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <title>Open House Porto • 18-19 Junho 2016</title>
+    
     <meta name="description" content="O Open House Porto terá a sua segunda edição no fim-de-semana de 18 e 19 de Junho de 2016.">
     
-    <link rel="canonical" href="/">
+    
+    <link rel="canonical" href="http://www.openhouseporto.com/">
 
+    
+    
+    <link rel="alternate" hreflang="en" href="http://www.openhouseporto.com/en/">
+    
     
     
     <link rel="stylesheet" href="/assets/css/style.min.css">
@@ -40,9 +46,10 @@
     <meta name="msapplication-TileColor" content="">
     <meta name="msapplication-TileImage" content="/assets/site-icons/favicon-512.png">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:image" content="/assets/site-icons/facebook-share.png">
+    <meta property="og:image" content="http://www.openhouseporto.com/assets/site-icons/facebook-share.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/stickyfill.min.js"></script>
     
     <script>
       $(function() {
@@ -68,6 +75,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       grunticon(["/assets/icons/icons.data.svg.css", "/assets/icons/icons.data.png.css", "/assets/icons/icons.fallback.css"]);
     </script>
     <noscript><link href="/assets/icons/icons.fallback.css" rel="stylesheet"></noscript>
+
+    <link href="/assets/css/icons.css" rel="stylesheet">
     
     <script type="text/javascript">
       $(document).ready(function () {
@@ -82,7 +91,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </head>
 
 
-  <body>
+  <body id="top">
 
     
   <header class="site-header home-header alt-color menu-closed" role="banner">
@@ -107,25 +116,24 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
         <li><a class="page-link" href="/about/">Sobre</a></li>
-        
-        
         
         <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
         
         <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
         
         
+        <li class="language-switcher">
+          
+          <a href="/en/">EN</a>
+          
+        </li>
         
       </ul>
     </nav>
@@ -150,15 +158,17 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <div class="hero-text-block">
       
       
-      <h2 class="hero-headline">18 e 19 Junho&nbsp;2016</h2>
+      <h2 class="hero-headline">18 e 19 de&nbsp;Junho</h2>
       
       
+      
+      <p class="hero-subhead">Descubra a arquitectura do Porto, Vila Nova de Gaia e&nbsp;Matosinhos</p>
       
 
       
       <ul class="hero-buttons">
         
-        <li><a href="/places/zones/" class="link-button white">Roteiro</a></li>
+        <li><a href="/places/zones/" class="link-button white">Explorar o&nbsp;Roteiro</a></li>
         
       </ul>
       
@@ -166,9 +176,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
       <ul class="hero-links">
         
-        <li><a href="https://vimeo.com/169456891" class="link-highlight white" target="_blank">Ver spot&nbsp;OHP'16&nbsp;&#10132;</a></li>
+        <li><a href="/map/" class="link-highlight white">Mapa&nbsp;&#10132;</a></li>
         
-        <li><a href="https://www.flickr.com/photos/trienaldelisboa/sets/72157655633571265" class="link-highlight white" target="_blank">Ver Galeria de Imagens&nbsp;2015&nbsp;&#10132;</a></li>
+        <li><a href="/timetable/" class="link-highlight white">Horários&nbsp;&#10132;</a></li>
+        
+        <li><a href="/plus/" class="link-highlight white">Plus&nbsp;&#10132;</a></li>
+        
+        <li><a href="https://vimeo.com/169456891" class="link-highlight white" target="_blank">Spot&nbsp;OHP'16&nbsp;&#10132;</a></li>
         
       </ul>
       
@@ -221,6 +235,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       <ul class="hero-links">
         
         <li><a href="/about/#como-funciona" class="link-highlight white">Como funcionam as&nbsp;visitas?&nbsp;&#10132;</a></li>
+        
+        <li><a href="https://www.flickr.com/photos/trienaldelisboa/sets/72157655633571265" class="link-highlight white" target="_blank">Ver Galeria de Imagens&nbsp;2015&nbsp;&#10132;</a></li>
         
       </ul>
       
@@ -288,95 +304,210 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 <div class="page partners-page">  
   <section class="partners-banner">
-    <div class="partners-block partners-block-home">
-
-  <ul class="partner-list partners-0">
-    <li id="integrado-na-iniciativa">
+    <div class="partners-block">
+  
+  
+  <ul class="partner-list">
+    
+    <li>
       <p>Integrado na Iniciativa</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-openhouseworldwide"><a href="http://www.openhouseworldwide.org" target="_blank">Open House Worldwide</a></li>
+        
+        
+        <li class="partner-logo icon-logo-open-house-worldwide" style="height: 3em; width: 14em;"><a title="Open House Worldwide" href="http://www.openhouseworldwide.org/" target="_blank">Open House Worldwide</a></li>
+        
       </ul>
+      
     </li>
+    
   </ul>
-
-  <ul class="partner-list partners-1">
-    <li id="co-produtores">
+  
+  <ul class="partner-list">
+    
+    <li>
       <p>Organização</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-casadaarquitectura"><a href="http://www.casadaarquitectura.pt/" target="_blank">Casa da Arquitectura</a></li>
-        <li class="partner-logo icon-logo-trienal"><a href="http://www.trienaldelisboa.com/" target="_blank">Trienal de Arquitectura de Lisboa</a></li>
+        
+        
+        <li class="partner-logo icon-logo-casadaarquitectura" style="height: 5em; width: 4.5em;"><a title="Casa da Arquitectura" href="http://www.casadaarquitectura.pt/" target="_blank">Casa da Arquitectura</a></li>
+        
+        
+        <li class="partner-logo icon-logo-trienal-de-arquitectura-de-lisboa" style="height: 5em; width: 9em;"><a title="Trienal de Arquitectura de Lisboa" href="http://www.trienaldelisboa.com/" target="_blank">Trienal de Arquitectura de Lisboa</a></li>
+        
       </ul>
+      
     </li>
-    <li id="parceiros-estrategicos">
+    
+    <li>
       <p>Parceiro Estratégico</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-cmporto"><a href="http://www.cm-porto.pt/" target="_blank">Câmara Municipal do Porto</a></li>
+        
+        
+        <li class="partner-logo icon-logo-camara-municipal-do-porto" style="height: 5em; width: 6em;"><a title="Câmara Municipal do Porto" href="http://www.cm-porto.pt/" target="_blank">Câmara Municipal do Porto</a></li>
+        
       </ul>
+      
     </li>
+    
   </ul>
   
-  <ul class="partner-list partners-2">
-    <li id="parceiros">
+  <ul class="partner-list">
+    
+    <li>
       <p>Parceiros</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-cmgaia"><a href="http://www.cm-gaia.pt/" target="_blank">Câmara Municipal de Vila Nova de Gaia</a></li>
-        <li class="partner-logo icon-logo-cmmatosinhos"><a href="http://www.cm-matosinhos.pt/" target="_blank">Câmara Municipal de Matosinhos</a></li>
+        
+        
+        <li class="partner-logo icon-logo-camara-municipal-de-vila-nova-de-gaia" style="height: 5em; width: 6em;"><a title="Câmara Municipal de Vila Nova de Gaia" href="http://www.cm-gaia.pt/" target="_blank">Câmara Municipal de Vila Nova de Gaia</a></li>
+        
+        
+        <li class="partner-logo icon-logo-camara-municipal-de-matosinhos" style="height: 5em; width: 10em;"><a title="Câmara Municipal de Matosinhos" href="http://www.cm-matosinhos.pt/" target="_blank">Câmara Municipal de Matosinhos</a></li>
+        
       </ul>
+      
     </li>
-    <li id="parceiro-institucional">
+    
+    <li>
       <p>Parceiro Institucional</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-fsh"><a href="http://fundacaoserrahenriques.org/" target="_blank">Fundação Serra Henriques</a></li>
+        
+        
+        <li class="partner-logo icon-logo-fundacao-serra-henriques" style="height: 5em; width: 8em;"><a title="Fundação Serra Henriques" href="http://fundacaoserrahenriques.org/" target="_blank">Fundação Serra Henriques</a></li>
+        
       </ul>
+      
     </li>
-    <li id="patrocinador">
+    
+    <li>
       <p>Patrocinador</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-telpark"><a href="https://www.telpark.com/" target="_blank">Telpark</a></li>
+        
+        
+        <li class="partner-logo icon-logo-telpark" style="height: 5em; width: 7em;"><a title="Telpark" href="https://www.telpark.com/" target="_blank">Telpark</a></li>
+        
       </ul>
+      
     </li>
+    
   </ul>
   
-  <ul class="partner-list partners-3">
-    <li id="marca-associada">
+  <ul class="partner-list">
+    
+    <li>
       <p>Marca Associada</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-otiima"><a href="http://www.otiima.com/" target="_blank">Otiima</a></li>
+        
+        
+        <li class="partner-logo icon-logo-otiima" style="height: 6em; width: 7em;"><a title="Otiima" href="http://www.otiima.com/" target="_blank">Otiima</a></li>
+        
       </ul>
+      
     </li>
-    <li id="parceiros-media">
+    
+    <li>
       <p>Parceiros Media</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-antena1"><a href="http://www.rtp.pt/antena1/" target="_blank">Antena 1</a></li>
-        <li class="partner-logo icon-logo-canal180"><a href="http://canal180.pt/" target="_blank">Canal 180</a></li>
+        
+        
+        <li class="partner-logo icon-logo-antena-1" style="height: 6em; width: 10em;"><a title="Antena 1" href="http://www.rtp.pt/antena1/" target="_blank">Antena 1</a></li>
+        
+        
+        <li class="partner-logo icon-logo-canal-180" style="height: 6em; width: 8em;"><a title="Canal 180" href="http://canal180.pt/" target="_blank">Canal 180</a></li>
+        
+        
+        <li class="partner-logo icon-logo-porto-canal" style="height: 6em; width: 5em;"><a title="Porto Canal" href="http://portocanal.sapo.pt/" target="_blank">Porto Canal</a></li>
+        
       </ul>
+      
     </li>
-    <li id="transporte-oficial">
+    
+    <li>
       <p>Transporte Oficial</p>
+      
       <ul>
-        <li class="partner-logo icon-logo-metro"><a href="http://www.metrodoporto.pt/" target="_blank">Metro do Porto</a></li>
+        
+        
+        <li class="partner-logo icon-logo-metro-do-porto" style="height: 6em; width: 12em;"><a title="Metro do Porto" href="http://www.metrodoporto.pt/" target="_blank">Metro do Porto</a></li>
+        
       </ul>
+      
     </li>
+    
   </ul>
-
-  <ul class="partner-list partners-4">
-    <li id="apoios-a-divulgacao">
-      <p>Apoios à Divulgação</p>
-      <ul>
-        <li class="partner-logo icon-logo-amag"><a href="http://www.adotmag.com/" target="_blank">a.mag</a></li>
-        <li class="partner-logo icon-logo-turismoporto"><a href="http://www.portoenorte.pt/" target="_blank">Turismo do Porto e Norte de Portugal</a></li>
-        <li class="partner-logo icon-logo-buildingpictures"><a href="http://www.buildingpictures.pt/" target="_blank">Building Pictures</a></li>
-        <li class="partner-logo icon-logo-cmgondomar"><a href="http://cm-gondomar.pt/" target="_blank">Câmara Municipal de Gondomar</a></li>
-        <li class="partner-logo icon-logo-dizplay"><a href="http://www.dizplay.pt/" target="_blank">Dizplay</a></li>
-        <li class="partner-logo icon-logo-drcn"><a href="http://www.culturanorte.pt/" target="_blank">Direção Regional de Cultura do Norte</a></li>
-        <li class="partner-logo icon-logo-faup"><a href="https://sigarra.up.pt/faup/pt/web_page.inicial" target="_blank">Faculdade de Arquitectura da Universidade do Porto</a></li>
-        <li class="partner-logo icon-logo-fundacaojuventude"><a href="http://www.fjuventude.pt/" target="_blank">Fundação da Juventude</a></li>
-      </ul>
-    </li>
-  </ul>
-
   
-
+  <ul class="partner-list">
+    
+    <li>
+      <p>Parceiros Programa Plus</p>
+      
+      <ul>
+        
+        
+        <li class="partner-logo icon-logo-acapo" style="height: 4em; width: ;"><a title="ACAPO" href="http://www.acapo.pt/" target="_blank">ACAPO</a></li>
+        
+        
+        <li class="partner-logo icon-logo-arkiplay" style="height: 4em; width: ;"><a title="Arkiplay" href="http://arkiplay.com/" target="_blank">Arkiplay</a></li>
+        
+        
+        <li class="partner-logo icon-logo-design-includes-you" style="height: 4em; width: ;"><a title="Design Includes You" href="http://designincludesyou.org/" target="_blank">Design Includes You</a></li>
+        
+        
+        <li class="partner-logo icon-logo-hands-to-discover" style="height: 4em; width: ;"><a title="Hands to Discover" href="https://www.facebook.com/Hands-to-discover-1496830543958770/" target="_blank">Hands to Discover</a></li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+  
+  <ul class="partner-list">
+    
+    <li>
+      <p>Apoios à Divulgação</p>
+      
+      <ul>
+        
+        
+        <li class="partner-logo icon-logo-amag" style="height: 4em; width: 6em;"><a title="a.mag" href="http://www.adotmag.com/" target="_blank">a.mag</a></li>
+        
+        
+        <li class="partner-logo icon-logo-turismo-do-porto-e-norte-de-portugal" style="height: 4em; width: 7em;"><a title="Turismo do Porto e Norte de Portugal" href="http://www.portoenorte.pt/" target="_blank">Turismo do Porto e Norte de Portugal</a></li>
+        
+        
+        <li class="partner-logo icon-logo-building-pictures" style="height: 4em; width: 6em;"><a title="Building Pictures" href="http://www.buildingpictures.pt/" target="_blank">Building Pictures</a></li>
+        
+        
+        <li class="partner-logo icon-logo-camara-municipal-de-gondomar" style="height: 4em; width: 4em;"><a title="Câmara Municipal de Gondomar" href="http://cm-gondomar.pt/" target="_blank">Câmara Municipal de Gondomar</a></li>
+        
+        
+        <li class="partner-logo icon-logo-dizplay" style="height: 4em; width: 6em;"><a title="Dizplay" href="http://www.dizplay.pt/" target="_blank">Dizplay</a></li>
+        
+        
+        <li class="partner-logo icon-logo-direcao-regional-de-cultura-do-norte" style="height: 4em; width: 14em;"><a title="Direção Regional de Cultura do Norte" href="http://www.culturanorte.pt/" target="_blank">Direção Regional de Cultura do Norte</a></li>
+        
+        
+        <li class="partner-logo icon-logo-faculdade-de-arquitectura-da-universidade-do-porto" style="height: 4em; width: 8em;"><a title="Faculdade de Arquitectura da Universidade do Porto" href="https://sigarra.up.pt/faup/pt/web_page.inicial" target="_blank">Faculdade de Arquitectura da Universidade do Porto</a></li>
+        
+        
+        <li class="partner-logo icon-logo-fundacao-da-juventude" style="height: 4em; width: 6em;"><a title="Fundação da Juventude" href="http://www.fjuventude.pt/" target="_blank">Fundação da Juventude</a></li>
+        
+        
+        <li class="partner-logo icon-logo-now-porto" style="height: 4em; width: ;"><a title="Now Porto" href="https://www.instagram.com/nowporto/" target="_blank">Now Porto</a></li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+  
 </div>
 
   </section>

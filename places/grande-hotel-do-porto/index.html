@@ -27,10 +27,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <title>Open House Porto – Grande Hotel do Porto</title>
-    <meta name="description" content="O Open House Porto terá a sua segunda edição no fim-de-semana de 18 e 19 de Junho de 2016.">
     
-    <link rel="canonical" href="/places/grande-hotel-do-porto/">
+    <meta name="description" content="Este luxuoso edifício, repleto de espelhos, lustres, florões, colunas, dourados e mármores foi projetado para ser o primeiro “Grande Hotel” da cida...">
+    
+    
+    <link rel="canonical" href="http://www.openhouseporto.com/places/grande-hotel-do-porto/">
 
+    
+    
+    <link rel="alternate" hreflang="en" href="http://www.openhouseporto.com/en/places/grande-hotel-do-porto/">
+    
     
     
     <link rel="stylesheet" href="/assets/css/style.min.css">
@@ -40,9 +46,10 @@
     <meta name="msapplication-TileColor" content="">
     <meta name="msapplication-TileImage" content="/assets/site-icons/favicon-512.png">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:image" content="/assets/site-icons/facebook-share.png">
+    <meta property="og:image" content="http://www.openhouseporto.com/assets/site-icons/facebook-share.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/stickyfill.min.js"></script>
     
     <script>
       $(function() {
@@ -68,6 +75,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       grunticon(["/assets/icons/icons.data.svg.css", "/assets/icons/icons.data.png.css", "/assets/icons/icons.fallback.css"]);
     </script>
     <noscript><link href="/assets/icons/icons.fallback.css" rel="stylesheet"></noscript>
+
+    <link href="/assets/css/icons.css" rel="stylesheet">
     
     <script type="text/javascript">
       $(document).ready(function () {
@@ -82,7 +91,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </head>
 
 
-  <body>
+  <body id="top">
 
     
   <header class="site-header alt-color menu-closed" role="banner">
@@ -104,25 +113,24 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
         <li><a class="page-link" href="/about/">Sobre</a></li>
-        
-        
         
         <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
         
         <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
         
         
+        <li class="language-switcher">
+          
+          <a href="/en/places/grande-hotel-do-porto/">EN</a>
+          
+        </li>
         
       </ul>
     </nav>
@@ -178,11 +186,13 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
       <section class="place-info" id="place-regular-visits">
         <h3>Visitas Acompanhadas</h3>
+        <button class="tooltip tooltip-hidden"><abbr title="Info">i</abbr></button>
+        <div class="tooltip-content">Visita ao espaço orientada pela equipa de voluntários Open House.</div>
         
-        <dl class="visit-timetable"><dt>Sábado</dt><dd>14:30</dd><dd>15:30</dd><dd>16:30</dd><dd>17:30</dd></dl>
+        <dl class="visit-timetable"><dt><a href='/timetable/#sat'>Sáb.</a></dt><dd><a href='/timetable/#sat1430'>14:30</a></dd><dd><a href='/timetable/#sat1530'>15:30</a></dd><dd><a href='/timetable/#sat1630'>16:30</a></dd><dd><a href='/timetable/#sat1730'>17:30</a></dd></dl>
         
         
-        <dl class="visit-timetable"><dt>Domingo</dt><dd>15:00</dd><dd>15:30</dd><dd>16:00</dd><dd>16:30</dd><dd>17:00</dd><dd>17:30</dd></dl>
+        <dl class="visit-timetable"><dt><a href='/timetable/#sun'>Dom.</a></dt><dd><a href='/timetable/#sun1500'>15:00</a></dd><dd><a href='/timetable/#sun1530'>15:30</a></dd><dd><a href='/timetable/#sun1600'>16:00</a></dd><dd><a href='/timetable/#sun1630'>16:30</a></dd><dd><a href='/timetable/#sun1700'>17:00</a></dd><dd><a href='/timetable/#sun1730'>17:30</a></dd></dl>
         
         
       </section>
@@ -190,12 +200,20 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
       <section class="place-info" id="place-tours">
         <h3>Visitas Comentadas</h3>
+        <button class="tooltip tooltip-hidden"><abbr title="Info">i</abbr></button>
+        <div class="tooltip-content">Visita ao espaço comentada pelo autor do projecto de arquitectura ou por um especialista convidado.</p></div>
         
         
-        <dl class="visit-timetable"><dt>Domingo</dt><dd>14:30</dd></dl>
+        <dl class="visit-timetable"><dt><a href='/timetable/#sun'>Dom.</a></dt><dd><a href='/timetable/#sun1430'>14:30</a></dd></dl>
         
         <p>Dom 14:30, Arq. Roberto Cremascoli</p>
       </section>
+      
+      
+      
+      
+      
+      
       
       
       
@@ -214,13 +232,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           
       </section>
       
-      <section class="place-info" id="reservations">
-        
-        
-        
-        
-        
-      </section>
+      
 
       
     </div>
@@ -242,11 +254,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <h3 class="">Localização</h3>
         <p>Rua de Santa Catarina, 197</p>
         
-        <a class="map-link">
+        <a class="map-link" href="/map/?q=34">
           <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=360x180&scale=2&sensor=false&maptype=roadmap&markers=color:black|41.14792,-8.60665&style=feature:road.local|element:labels&style=feature:landscape%7Csaturation:-100%7Clightness:65%7Cvisibility:on&style=feature:poi%7Cvisibility:off&style=feature:road.highway%7Csaturation:-100%7Cvisibility:simplified&style=feature:road.arterial%7Csaturation:-100%7Clightness:30%7Cvisibility:on&style=feature:road.local%7Csaturation:-100%7Clightness:40%7Cvisibility:on&style=feature:transit%7Csaturation:-100%7Cvisibility:simplified&style=feature:administrative.province%7Cvisibility:off&style=feature:water%7Celement:labels%7Csaturation:-97%7Clightness:-25%7Cvisibility:on&style=feature:water%7Celement:geometry%7Csaturation:-97%7Clightness:-25%7Chue:0xffff00">
           <span class="place-number">34</span>
         </a>
-        
+        <p>Direções: <a title="Grande Hotel do Porto, Rua de Santa Catarina, 197 — Google Maps" target="_blank" href="https://www.google.com/maps/place/Grande Hotel do Porto, Rua de Santa Catarina, 197/@41.14792,-8.60665,17z">Google Maps</a> / <a title="Grande Hotel do Porto, Rua de Santa Catarina, 197 — Apple Maps" target="_blank" href="http://maps.apple.com/?sll=41.14792,-8.60665?q=Grande Hotel do Porto, Rua de Santa Catarina, 197">Apple Maps</a></p>
       </section>
       
       <section class="place-info" id="place-transportation">
@@ -266,9 +278,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <section class="place-info" id="place-share">
       <h3>Partilhar</h3>
       <ul>
-        <li><a class="link-share" href="https://www.facebook.com/share.php?u=/places/grande-hotel-do-porto/" target="_blank">Facebook</a></li>
-        <li><a class="link-share" href="https://twitter.com/share?url=/places/grande-hotel-do-porto/&text=Grande Hotel do Porto&hashtags=openhouseporto&original_referer=" target="_blank">Twitter</a></li>
-        <li><a class="link-share" href="mailto:?subject=Grande Hotel do Porto&body=/places/grande-hotel-do-porto/%0D%0A%0D%0ALisboa%20Open%20House%202016">Email</a></li>
+        <li><a class="link-share" href="https://www.facebook.com/share.php?u=http://www.openhouseporto.com/places/grande-hotel-do-porto/" target="_blank">Facebook</a></li>
+        <li><a class="link-share" href="https://twitter.com/share?url=http://www.openhouseporto.com/places/grande-hotel-do-porto/&text=Grande Hotel do Porto&hashtags=openhouseporto&original_referer=http://www.openhouseporto.com" target="_blank">Twitter</a></li>
+        <li><a class="link-share" href="mailto:?subject=Grande Hotel do Porto&body=http://www.openhouseporto.com/places/grande-hotel-do-porto/%0D%0A%0D%0ALisboa%20Open%20House%202016">Email</a></li>
       </ul>
     </section>
     
@@ -313,6 +325,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </section>
 
 </article>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltip').click(function(){
+      $(this).toggleClass("tooltip-hidden");
+    });
+  });
+</script>
 
     </div>
 

@@ -27,10 +27,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <title>Open House Porto – Hospital de Santo António</title>
-    <meta name="description" content="O Open House Porto terá a sua segunda edição no fim-de-semana de 18 e 19 de Junho de 2016.">
     
-    <link rel="canonical" href="/places/hospital-de-santo-antonio/">
+    <meta name="description" content="Este imponente edifício neoclássico, muito presente na definição da vivência do Porto, foi construído segundo o projeto de John Carr de 1769, que a...">
+    
+    
+    <link rel="canonical" href="http://www.openhouseporto.com/places/hospital-de-santo-antonio/">
 
+    
+    
+    <link rel="alternate" hreflang="en" href="http://www.openhouseporto.com/en/places/hospital-de-santo-antonio/">
+    
     
     
     <link rel="stylesheet" href="/assets/css/style.min.css">
@@ -40,9 +46,10 @@
     <meta name="msapplication-TileColor" content="">
     <meta name="msapplication-TileImage" content="/assets/site-icons/favicon-512.png">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:image" content="/assets/site-icons/facebook-share.png">
+    <meta property="og:image" content="http://www.openhouseporto.com/assets/site-icons/facebook-share.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/stickyfill.min.js"></script>
     
     <script>
       $(function() {
@@ -68,6 +75,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       grunticon(["/assets/icons/icons.data.svg.css", "/assets/icons/icons.data.png.css", "/assets/icons/icons.fallback.css"]);
     </script>
     <noscript><link href="/assets/icons/icons.fallback.css" rel="stylesheet"></noscript>
+
+    <link href="/assets/css/icons.css" rel="stylesheet">
     
     <script type="text/javascript">
       $(document).ready(function () {
@@ -82,7 +91,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </head>
 
 
-  <body>
+  <body id="top">
 
     
   <header class="site-header alt-color menu-closed" role="banner">
@@ -104,25 +113,24 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
         <li><a class="page-link" href="/about/">Sobre</a></li>
-        
-        
         
         <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
         
         <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
         
         
+        <li class="language-switcher">
+          
+          <a href="/en/places/hospital-de-santo-antonio/">EN</a>
+          
+        </li>
         
       </ul>
     </nav>
@@ -178,11 +186,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
       <section class="place-info" id="place-regular-visits">
         <h3>Visitas Acompanhadas</h3>
+        <button class="tooltip tooltip-hidden"><abbr title="Info">i</abbr></button>
+        <div class="tooltip-content">Visita ao espaço orientada pela equipa de voluntários Open House.</div>
         
-        <dl class="visit-timetable"><dt>Sábado</dt><dd>18:00</dd></dl>
         
-        
-        <dl class="visit-timetable"><dt>Domingo</dt><dd>09:00</dd><dd>10:00</dd><dd>11:00</dd><dd>12:00</dd></dl>
+        <dl class="visit-timetable"><dt><a href='/timetable/#sun'>Dom.</a></dt><dd><a href='/timetable/#sun0900'>09:00</a></dd><dd><a href='/timetable/#sun1000'>10:00</a></dd><dd><a href='/timetable/#sun1100'>11:00</a></dd><dd><a href='/timetable/#sun1200'>12:00</a></dd></dl>
         
         
       </section>
@@ -190,12 +198,20 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
       
       <section class="place-info" id="place-tours">
         <h3>Visitas Comentadas</h3>
+        <button class="tooltip tooltip-hidden"><abbr title="Info">i</abbr></button>
+        <div class="tooltip-content">Visita ao espaço comentada pelo autor do projecto de arquitectura ou por um especialista convidado.</p></div>
         
-        <dl class="visit-timetable"><dt>Sábado</dt><dd>14:00</dd><dd>15:00</dd><dd>16:00</dd><dd>17:00</dd></dl>
+        <dl class="visit-timetable"><dt><a href='/timetable/#sat'>Sáb.</a></dt><dd><a href='/timetable/#sat1400'>14:00</a></dd><dd><a href='/timetable/#sat1500'>15:00</a></dd><dd><a href='/timetable/#sat1600'>16:00</a></dd><dd><a href='/timetable/#sat1700'>17:00</a></dd></dl>
         
         
         <p>Sáb 14:00, 15:00, 16:00 e 17:00, Arq. Domingos Tavares</p>
       </section>
+      
+      
+      
+      
+      
+      
       
       
       
@@ -214,13 +230,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           
       </section>
       
-      <section class="place-info" id="reservations">
-        
-        
-        
-        
-        
-      </section>
+      
 
       
     </div>
@@ -242,11 +252,11 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         <h3 class="">Localização</h3>
         <p>Largo Prof. Abel Salazar</p>
         
-        <a class="map-link">
+        <a class="map-link" href="/map/?q=28">
           <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=360x180&scale=2&sensor=false&maptype=roadmap&markers=color:black|41.14674,-8.61816&style=feature:road.local|element:labels&style=feature:landscape%7Csaturation:-100%7Clightness:65%7Cvisibility:on&style=feature:poi%7Cvisibility:off&style=feature:road.highway%7Csaturation:-100%7Cvisibility:simplified&style=feature:road.arterial%7Csaturation:-100%7Clightness:30%7Cvisibility:on&style=feature:road.local%7Csaturation:-100%7Clightness:40%7Cvisibility:on&style=feature:transit%7Csaturation:-100%7Cvisibility:simplified&style=feature:administrative.province%7Cvisibility:off&style=feature:water%7Celement:labels%7Csaturation:-97%7Clightness:-25%7Cvisibility:on&style=feature:water%7Celement:geometry%7Csaturation:-97%7Clightness:-25%7Chue:0xffff00">
           <span class="place-number">28</span>
         </a>
-        
+        <p>Direções: <a title="Hospital de Santo António, Largo Prof. Abel Salazar — Google Maps" target="_blank" href="https://www.google.com/maps/place/Hospital de Santo António, Largo Prof. Abel Salazar/@41.14674,-8.61816,17z">Google Maps</a> / <a title="Hospital de Santo António, Largo Prof. Abel Salazar — Apple Maps" target="_blank" href="http://maps.apple.com/?sll=41.14674,-8.61816?q=Hospital de Santo António, Largo Prof. Abel Salazar">Apple Maps</a></p>
       </section>
       
       <section class="place-info" id="place-transportation">
@@ -266,9 +276,9 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
     <section class="place-info" id="place-share">
       <h3>Partilhar</h3>
       <ul>
-        <li><a class="link-share" href="https://www.facebook.com/share.php?u=/places/hospital-de-santo-antonio/" target="_blank">Facebook</a></li>
-        <li><a class="link-share" href="https://twitter.com/share?url=/places/hospital-de-santo-antonio/&text=Hospital de Santo António&hashtags=openhouseporto&original_referer=" target="_blank">Twitter</a></li>
-        <li><a class="link-share" href="mailto:?subject=Hospital de Santo António&body=/places/hospital-de-santo-antonio/%0D%0A%0D%0ALisboa%20Open%20House%202016">Email</a></li>
+        <li><a class="link-share" href="https://www.facebook.com/share.php?u=http://www.openhouseporto.com/places/hospital-de-santo-antonio/" target="_blank">Facebook</a></li>
+        <li><a class="link-share" href="https://twitter.com/share?url=http://www.openhouseporto.com/places/hospital-de-santo-antonio/&text=Hospital de Santo António&hashtags=openhouseporto&original_referer=http://www.openhouseporto.com" target="_blank">Twitter</a></li>
+        <li><a class="link-share" href="mailto:?subject=Hospital de Santo António&body=http://www.openhouseporto.com/places/hospital-de-santo-antonio/%0D%0A%0D%0ALisboa%20Open%20House%202016">Email</a></li>
       </ul>
     </section>
     
@@ -313,6 +323,14 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   </section>
 
 </article>
+
+<script>
+  $(document).ready(function() {
+    $('.tooltip').click(function(){
+      $(this).toggleClass("tooltip-hidden");
+    });
+  });
+</script>
 
     </div>
 
