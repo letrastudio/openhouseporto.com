@@ -33,7 +33,7 @@
 
     
     
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?1498409637561107675">
     <link rel="shortcut icon" href="/assets/site-icons/favicon-2017.ico">
     <link rel="apple-touch-icon-precomposed" href="/assets/site-icons/favicon-512.png">
     <meta name="apple-mobile-web-app-title" content="Open House">
@@ -87,8 +87,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
   <body id="top">
 
-    
-  <header class="site-header alt-color menu-closed" role="banner">
+      <header class="site-header alt-color menu-closed" role="banner">
   <div class="header-wrapper">
     
     <div class="site-header-title">
@@ -115,15 +114,25 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
+        <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
         
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
         
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
         
         
-        <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
+        
+        <li><a class="page-link" href="/caleidoscopio/">Caleidoscópio</a></li>
+        
+        
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
+        
+        
         
         
         
@@ -145,6 +154,512 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
   <h2>Mapa</h2>
 </header>
 
+
+<div class="page map-page">
+  <div id="view1">
+    <script src="/assets/js/map.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+    <script src="/assets/js/richmarker-min.js"></script>
+    <script type="text/javascript">
+      var markers =
+        [
+          
+          
+          {
+            "lat": 41.1729,
+            "lng": -8.58713,
+            "number": "29",
+            "title": "1930 City Lodge",
+            "url": "/places/1930-city-lodge/"
+          },
+          
+          {
+            "lat": 41.15331,
+            "lng": -8.61357,
+            "number": "20",
+            "title": "Albergue D. Margarida Sousa Dias",
+            "url": "/places/albergue-porto/"
+          },
+          
+          {
+            "lat": 41.16051,
+            "lng": -8.58079,
+            "number": "32",
+            "title": "Antigo Matadouro Industrial",
+            "url": "/places/antigo-matadouro-industrial/"
+          },
+          
+          {
+            "lat": 41.12994,
+            "lng": -8.66713,
+            "number": "59",
+            "title": "Apartamentos Domus Aqua",
+            "url": "/places/apartamentos-domus-aqua/"
+          },
+          
+          {
+            "lat": 41.13848,
+            "lng": -8.60935,
+            "number": "50",
+            "title": "Apartamentos Oh Porto",
+            "url": "/places/apartamentos-oh-porto/"
+          },
+          
+          {
+            "lat": 41.17763,
+            "lng": -8.5712,
+            "number": "30",
+            "title": "Bairro São João de Deus",
+            "url": "/places/bairro-sao-joao-de-deus/"
+          },
+          
+          {
+            "lat": 41.15007,
+            "lng": -8.6107,
+            "number": "43",
+            "title": "Câmara Municipal do Porto",
+            "url": "/places/camara-municipal-do-porto/"
+          },
+          
+          {
+            "lat": 41.13458,
+            "lng": -8.60114,
+            "number": "56",
+            "title": "Capela de São José",
+            "url": "/places/capela-sao-jose/"
+          },
+          
+          {
+            "lat": 41.17848,
+            "lng": -8.68694,
+            "number": "10",
+            "title": "Casa da Arquitectura - Real Vinícola",
+            "url": "/places/casa-da-arquitectura/"
+          },
+          
+          {
+            "lat": 41.15878,
+            "lng": -8.63071,
+            "number": "18",
+            "title": "Casa da Música",
+            "url": "/places/casa-da-musica/"
+          },
+          
+          {
+            "lat": 41.20301,
+            "lng": -8.71506,
+            "number": "1",
+            "title": "Casa de Chá da Boa Nova",
+            "url": "/places/casa-de-cha-da-boa-nova/"
+          },
+          
+          {
+            "lat": 41.15961,
+            "lng": -8.65648,
+            "number": "13",
+            "title": "Casa de Serralves",
+            "url": "/places/casa-de-serralves/"
+          },
+          
+          {
+            "lat": 41.15119,
+            "lng": -8.62134,
+            "number": "21",
+            "title": "Casa do Rosário",
+            "url": "/places/casa-do-rosario/"
+          },
+          
+          {
+            "lat": 41.165,
+            "lng": -8.60102,
+            "number": "26",
+            "title": "Casa Lindo Vale",
+            "url": "/places/casa-lindo-vale/"
+          },
+          
+          {
+            "lat": 41.12871,
+            "lng": -8.61142,
+            "number": "57",
+            "title": "Casa-Museu Teixeira Lopes",
+            "url": "/places/casa-museu-teixeira-lopes/"
+          },
+          
+          {
+            "lat": 41.14157,
+            "lng": -8.61117,
+            "number": "49",
+            "title": "Casa na Escada das Verdades",
+            "url": "/places/casa-na-escada-das-verdades/"
+          },
+          
+          {
+            "lat": 41.10711,
+            "lng": -8.65556,
+            "number": "60",
+            "title": "Casa na Madalena",
+            "url": "/places/casa-na-madalena/"
+          },
+          
+          {
+            "lat": 41.16547,
+            "lng": -8.65464,
+            "number": "15",
+            "title": "Casa Ricardo Pinto",
+            "url": "/places/casa-ricardo-pinto/"
+          },
+          
+          {
+            "lat": 41.14548,
+            "lng": -8.62038,
+            "number": "22",
+            "title": "Casa da Rua da Bandeirinha",
+            "url": "/places/casas-bandeirinha/"
+          },
+          
+          {
+            "lat": 41.15757,
+            "lng": -8.60717,
+            "number": "40",
+            "title": "Casas da Fonte Parda",
+            "url": "/places/casas-da-fonte-parda/"
+          },
+          
+          {
+            "lat": 41.18759,
+            "lng": -8.68879,
+            "number": "7",
+            "title": "Casas-pátio",
+            "url": "/places/casas-patio/"
+          },
+          
+          {
+            "lat": 41.1455,
+            "lng": -8.5959,
+            "number": "36",
+            "title": "Cemitério Prado do Repouso",
+            "url": "/places/cemiterio-prado-repouso/"
+          },
+          
+          {
+            "lat": 41.16514,
+            "lng": -8.60443,
+            "number": "25",
+            "title": "Centro de Sangue e Transplantação",
+            "url": "/places/centro-de-sangue/"
+          },
+          
+          {
+            "lat": 41.14799,
+            "lng": -8.61067,
+            "number": "44",
+            "title": "Caixa Geral de Depósitos / Culturgest",
+            "url": "/places/cgd-culturgest/"
+          },
+          
+          {
+            "lat": 41.15009,
+            "lng": -8.60336,
+            "number": "39",
+            "title": "Duas casas para S",
+            "url": "/places/duas-casas-para-s/"
+          },
+          
+          {
+            "lat": 41.15187,
+            "lng": -8.6064,
+            "number": "41",
+            "title": "Edifício DKW",
+            "url": "/places/edificio-dkw/"
+          },
+          
+          {
+            "lat": 41.18512,
+            "lng": -8.69261,
+            "number": "5",
+            "title": "ESAD Idea",
+            "url": "/places/esad-idea/"
+          },
+          
+          {
+            "lat": 41.18969,
+            "lng": -8.62986,
+            "number": "12",
+            "title": "Escola Básica do Padrão da Légua",
+            "url": "/places/escola-padrao-da-legua/"
+          },
+          
+          {
+            "lat": 41.14925,
+            "lng": -8.64945,
+            "number": "16",
+            "title": "Escritórios do Aleixo",
+            "url": "/places/escritorios-do-aleixo/"
+          },
+          
+          {
+            "lat": 41.14861,
+            "lng": -8.58739,
+            "number": "33",
+            "title": "Espaço Mira e Mirafórum",
+            "url": "/places/espaco-mira/"
+          },
+          
+          {
+            "lat": 41.14856,
+            "lng": -8.59853,
+            "number": "38",
+            "title": "Estação de Metro 24 de Agosto",
+            "url": "/places/estacao-metro-24-agosto/"
+          },
+          
+          {
+            "lat": 41.16175,
+            "lng": -8.58305,
+            "number": "31",
+            "title": "Estádio do Dragão",
+            "url": "/places/estadio-do-dragao/"
+          },
+          
+          {
+            "lat": 41.17573,
+            "lng": -8.59844,
+            "number": "24",
+            "title": "Faculda de Economia da Universidade do Porto",
+            "url": "/places/faculdade-de-economia/"
+          },
+          
+          {
+            "lat": 41.2014,
+            "lng": -8.71181,
+            "number": "2",
+            "title": "Farol de Leça da Palmeira",
+            "url": "/places/farol-de-leca-da-palmeira/"
+          },
+          
+          {
+            "lat": 41.14826,
+            "lng": -8.58768,
+            "number": "35",
+            "title": "Habitação em Miraflor",
+            "url": "/places/habitacao-miraflor/"
+          },
+          
+          {
+            "lat": 41.17004,
+            "lng": -8.58989,
+            "number": "28",
+            "title": "Hospital Conde Ferreira",
+            "url": "/places/hospital-conde-ferreira/"
+          },
+          
+          {
+            "lat": 41.17541,
+            "lng": -8.60321,
+            "number": "23",
+            "title": "i3s - Instituto de Investigação e Inovação em Saúde",
+            "url": "/places/i3s/"
+          },
+          
+          {
+            "lat": 41.14218,
+            "lng": -8.61276,
+            "number": "48",
+            "title": "Museu de Arte Sacra e Arqueologia / Igreja de S. Lourenço",
+            "url": "/places/igreja-sao-lourenco/"
+          },
+          
+          {
+            "lat": 41.14321,
+            "lng": -8.59884,
+            "number": "37",
+            "title": "Ilha na Rua de S. Vítor",
+            "url": "/places/ilha-rua-sao-vitor/"
+          },
+          
+          {
+            "lat": 41.13867,
+            "lng": -8.60277,
+            "number": "53",
+            "title": "Instituto Geofísico",
+            "url": "/places/instituto-geofisico/"
+          },
+          
+          {
+            "lat": 41.13684,
+            "lng": -8.59562,
+            "number": "54",
+            "title": "Laboratório Eng. Edgar Cardoso",
+            "url": "/places/laboratorio-edgar-cardoso/"
+          },
+          
+          {
+            "lat": 41.14835,
+            "lng": -8.58762,
+            "number": "34",
+            "title": "Loft Miraflor",
+            "url": "/places/loft-miraflor/"
+          },
+          
+          {
+            "lat": 41.187,
+            "lng": -8.69309,
+            "number": "6",
+            "title": "Mercado de Matosinhos",
+            "url": "/places/mercado-de-matosinhos/"
+          },
+          
+          {
+            "lat": 41.13816,
+            "lng": -8.60813,
+            "number": "51",
+            "title": "Mosteiro da Serra do Pilar",
+            "url": "/places/mosteiro-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.14211,
+            "lng": -8.61178,
+            "number": "47",
+            "title": "Paço Episcopal",
+            "url": "/places/paco-episcopal/"
+          },
+          
+          {
+            "lat": 41.18345,
+            "lng": -8.6829,
+            "number": "9",
+            "title": "Palacete Visconde de Trevões",
+            "url": "/places/palacete-visconde-de-trevoes/"
+          },
+          
+          {
+            "lat": 41.149,
+            "lng": -8.60815,
+            "number": "42",
+            "title": "Palácio do Bolhão",
+            "url": "/places/palacio-do-bolhao/"
+          },
+          
+          {
+            "lat": 41.16157,
+            "lng": -8.60001,
+            "number": "27",
+            "title": "Parque Residencial do Luso",
+            "url": "/places/parque-residencial-do-luso/"
+          },
+          
+          {
+            "lat": 41.19305,
+            "lng": -8.70732,
+            "number": "3",
+            "title": "Piscina das Marés",
+            "url": "/places/piscina-das-mares/"
+          },
+          
+          {
+            "lat": 41.21255,
+            "lng": -8.65946,
+            "number": "11",
+            "title": "PMO e PCC Metro do Porto",
+            "url": "/places/pmo-e-pcc-metro-do-porto/"
+          },
+          
+          {
+            "lat": 41.13531,
+            "lng": -8.60062,
+            "number": "55",
+            "title": "Ponte São João",
+            "url": "/places/ponte-sao-joao/"
+          },
+          
+          {
+            "lat": 41.13704,
+            "lng": -8.60669,
+            "number": "52",
+            "title": "Quartel da Serra do Pilar",
+            "url": "/places/quartel-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.18541,
+            "lng": -8.68492,
+            "number": "8",
+            "title": "Quatro Casas",
+            "url": "/places/quatro-casas/"
+          },
+          
+          {
+            "lat": 41.17046,
+            "lng": -8.63117,
+            "number": "17",
+            "title": "Casa e Quinta da Prelada",
+            "url": "/places/quinta-da-prelada/"
+          },
+          
+          {
+            "lat": 41.16273,
+            "lng": -8.65963,
+            "number": "14",
+            "title": "Sede Ferreira Build Power",
+            "url": "/places/sede-ferreira-construcoes/"
+          },
+          
+          {
+            "lat": 41.15475,
+            "lng": -8.6172,
+            "number": "19",
+            "title": "Sede Secção Regional do Norte da Ordem dos Arquitectos",
+            "url": "/places/sede-ordem-arquitectos/"
+          },
+          
+          {
+            "lat": 41.14466,
+            "lng": -8.60745,
+            "number": "46",
+            "title": "Teatro Nacional de São João / Oficinas TNSJ",
+            "url": "/places/teatro-oficinas/"
+          },
+          
+          {
+            "lat": 41.17725,
+            "lng": -8.70189,
+            "number": "4",
+            "title": "Terminal de Cruzeiros do Porto de Leixões",
+            "url": "/places/terminal-de-cruzeiros-do-porto-de-leixoes/"
+          },
+          
+          {
+            "lat": 41.11312,
+            "lng": -8.59825,
+            "number": "58",
+            "title": "Torre PT",
+            "url": "/places/torre-pt/"
+          },
+          
+          {
+            "lat": 41.14542,
+            "lng": -8.60988,
+            "number": "45",
+            "title": "Túnel S. Bento-Campanhã",
+            "url": "/places/tunel-sao-bento-campanha/"
+          }
+          
+          
+        ];
+      var centerLat = 41.14753;
+      var centerLng = -8.636337;
+
+      window.onload = initMap;
+    </script>
+    <div id="map" style="width: 100%;"></div>
+  </div>
+  
+  
+  <p><a href="/uploads/MAPA_0H_17%E2%80%94web%20(1).pdf" class="map-download" target="_blank">Download do Mapa em Formato PDF&nbsp;&#10132;</a></p>
+  
+
+</div>
 
 
 
@@ -173,6 +688,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <li class="icon-social-facebook-white"><a href="https://facebook.com/casadaarquitectura.pt" target="_blank">Facebook</a></li>
           
           
+          <li class="icon-social-twitter-white"><a href="https://twitter.com/casa_arqui" target="_blank">Twitter</a></li>
+          
           
           <li class="icon-social-instagram-white"><a href="https://instagram.com/casadaarquitectura" target="_blank">Twitter</a></li>  
           
@@ -193,16 +710,72 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </footer>
 
 
+    
+    
+    <div id="now-button" style="display: none;">
+      
+      <a href="/timetable/">Espaços Abertos Agora ➔</a>
+      
+    </div>
+    <script>
+      var now;
+      var current_time;
+      var current_code;
+      var times;
+      var visitsAvailable = false;
+      var timetable_url = $("#now-button a").attr("href");
+      var timetable_code_url;
+      
+      function checkTimes() {
+        
+        now = new Date();
+        current_time = now.getTime();
+        
+        $.each(times, function(index, obj) {
+          var start = new Date(obj.start);
+          var start_time = start.getTime();
+          var end = new Date(obj.end);
+          var end_time = end.getTime();
+          var timetable_code = obj.code;
+          if (current_time >= start_time && current_time < end_time) {
+            visitsAvailable = true;
+            current_code = timetable_code;
+          }
+        });
+
+        if (visitsAvailable == true) {
+          var timetable_code_url = timetable_url + "#" + current_code;
+          $("#now-button a").attr("href", timetable_code_url);
+          $("#now-button").show();
+        } else {
+          $("#now-button").hide();
+        }
+
+      }
+      
+      $(function(){
+        
+        $.getJSON("/times.json", function(json) {
+          times = json;
+          
+          setInterval(checkTimes, 1000);
+          
+        });
+        
+      });
+    </script>
+    
+
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
       ga('create', 'UA-64171664-2', 'auto');
       ga('send', 'pageview');
-    
     </script>
+    
 
   </body>
 

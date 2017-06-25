@@ -33,7 +33,7 @@
 
     
     
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?1498409637561107675">
     <link rel="shortcut icon" href="/assets/site-icons/favicon-2017.ico">
     <link rel="apple-touch-icon-precomposed" href="/assets/site-icons/favicon-512.png">
     <meta name="apple-mobile-web-app-title" content="Open House">
@@ -87,8 +87,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
   <body id="top">
 
-    
-  <header class="site-header alt-color menu-closed" role="banner">
+      <header class="site-header alt-color menu-closed" role="banner">
   <div class="header-wrapper">
     
     <div class="site-header-title">
@@ -115,15 +114,25 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
+        <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
         
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
         
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
         
         
-        <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
+        
+        <li><a class="page-link" href="/caleidoscopio/">Caleidoscópio</a></li>
+        
+        
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
+        
+        
         
         
         
@@ -140,23 +149,53 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 
 
+
+
+
 <header class="page header-page activity-nav">
   <h2>Programa Plus</h2>
 </header>
 
+
 <div class="page activity-list">
 
-<section class="tag-section">
+  <section class="tag-section">
+  
+    
+    <div class="default-text-content activity-list-description">
+      <p>Programa paralelo de atividades gratuitas promovidas por entidades exteriores à CASA DA ARQUITECTURA cujo perfil e local se enquadram no Open House Porto.</p>
 
-  <ul>
+    </div>
     
     
-  </ul>
+    <ul>
+      
+      
+      
+      <li class="place-thumb-container visible">
+  <div class="place-thumb" style="background-image: url(/uploads/carnet-c-10-thumb.jpg);">
+    <a href="/plus/carnet-c-10/">
+      <h4 class="activity-name">Instalação Carnet C 10</h4>
+    </a>
+  </div>
+</li>
 
-</section>
+      
+      <li class="place-thumb-container visible">
+  <div class="place-thumb" style="background-image: url(/uploads/piano-porto-thumb.jpg);">
+    <a href="/plus/piano-porto/">
+      <h4 class="activity-name">PianoPorto 2017</h4>
+    </a>
+  </div>
+</li>
 
+      
+    </ul>
+  
+  </section>
 
 </div>
+
 
     </div>
 
@@ -183,6 +222,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
           <li class="icon-social-facebook-white"><a href="https://facebook.com/casadaarquitectura.pt" target="_blank">Facebook</a></li>
           
           
+          <li class="icon-social-twitter-white"><a href="https://twitter.com/casa_arqui" target="_blank">Twitter</a></li>
+          
           
           <li class="icon-social-instagram-white"><a href="https://instagram.com/casadaarquitectura" target="_blank">Twitter</a></li>  
           
@@ -203,16 +244,72 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </footer>
 
 
+    
+    
+    <div id="now-button" style="display: none;">
+      
+      <a href="/timetable/">Espaços Abertos Agora ➔</a>
+      
+    </div>
+    <script>
+      var now;
+      var current_time;
+      var current_code;
+      var times;
+      var visitsAvailable = false;
+      var timetable_url = $("#now-button a").attr("href");
+      var timetable_code_url;
+      
+      function checkTimes() {
+        
+        now = new Date();
+        current_time = now.getTime();
+        
+        $.each(times, function(index, obj) {
+          var start = new Date(obj.start);
+          var start_time = start.getTime();
+          var end = new Date(obj.end);
+          var end_time = end.getTime();
+          var timetable_code = obj.code;
+          if (current_time >= start_time && current_time < end_time) {
+            visitsAvailable = true;
+            current_code = timetable_code;
+          }
+        });
+
+        if (visitsAvailable == true) {
+          var timetable_code_url = timetable_url + "#" + current_code;
+          $("#now-button a").attr("href", timetable_code_url);
+          $("#now-button").show();
+        } else {
+          $("#now-button").hide();
+        }
+
+      }
+      
+      $(function(){
+        
+        $.getJSON("/times.json", function(json) {
+          times = json;
+          
+          setInterval(checkTimes, 1000);
+          
+        });
+        
+      });
+    </script>
+    
+
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
       ga('create', 'UA-64171664-2', 'auto');
       ga('send', 'pageview');
-    
     </script>
+    
 
   </body>
 

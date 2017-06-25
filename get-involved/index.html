@@ -41,7 +41,7 @@ Procuramos voluntários a partir dos 16 anos com...">
 
     
     
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?1498409637561107675">
     <link rel="shortcut icon" href="/assets/site-icons/favicon-2017.ico">
     <link rel="apple-touch-icon-precomposed" href="/assets/site-icons/favicon-512.png">
     <meta name="apple-mobile-web-app-title" content="Open House">
@@ -95,8 +95,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
   <body id="top">
 
-    
-  <header class="site-header alt-color menu-closed" role="banner">
+      <header class="site-header alt-color menu-closed" role="banner">
   <div class="header-wrapper">
     
     <div class="site-header-title">
@@ -123,15 +122,25 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
         
         
         
+        <li><a class="page-link" href="/places/zones/">Roteiro</a></li>
         
         
         
+        <li><a class="page-link" href="/map/">Mapa</a></li>
         
         
         
+        <li><a class="page-link" href="/timetable/">Horários</a></li>
         
         
-        <li><a class="page-link" href="/get-involved/">Colaborar</a></li>
+        
+        <li><a class="page-link" href="/caleidoscopio/">Caleidoscópio</a></li>
+        
+        
+        
+        <li><a class="page-link" href="/plus/">Plus</a></li>
+        
+        
         
         
         
@@ -202,7 +211,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 <p>Venha viver o Open House de perto e conhecer o roteiro deste ano em 1ª mão!</p>
 
-<p><strong>Candidaturas até **30 de Abril</strong>.</p>
+<p><strong>Candidaturas até **5 de Maio</strong>.</p>
 
 <p>**<a class="link-button" href="https://form.jotformeu.com/CASADARQUITECTURA/open-house-porto-2017--voluntariado" target="_blank">Candidate-se</a></p>
 
@@ -281,6 +290,8 @@ Casa da Arquitectura<br />
           <li class="icon-social-facebook-white"><a href="https://facebook.com/casadaarquitectura.pt" target="_blank">Facebook</a></li>
           
           
+          <li class="icon-social-twitter-white"><a href="https://twitter.com/casa_arqui" target="_blank">Twitter</a></li>
+          
           
           <li class="icon-social-instagram-white"><a href="https://instagram.com/casadaarquitectura" target="_blank">Twitter</a></li>  
           
@@ -301,16 +312,72 @@ Casa da Arquitectura<br />
 </footer>
 
 
+    
+    
+    <div id="now-button" style="display: none;">
+      
+      <a href="/timetable/">Espaços Abertos Agora ➔</a>
+      
+    </div>
+    <script>
+      var now;
+      var current_time;
+      var current_code;
+      var times;
+      var visitsAvailable = false;
+      var timetable_url = $("#now-button a").attr("href");
+      var timetable_code_url;
+      
+      function checkTimes() {
+        
+        now = new Date();
+        current_time = now.getTime();
+        
+        $.each(times, function(index, obj) {
+          var start = new Date(obj.start);
+          var start_time = start.getTime();
+          var end = new Date(obj.end);
+          var end_time = end.getTime();
+          var timetable_code = obj.code;
+          if (current_time >= start_time && current_time < end_time) {
+            visitsAvailable = true;
+            current_code = timetable_code;
+          }
+        });
+
+        if (visitsAvailable == true) {
+          var timetable_code_url = timetable_url + "#" + current_code;
+          $("#now-button a").attr("href", timetable_code_url);
+          $("#now-button").show();
+        } else {
+          $("#now-button").hide();
+        }
+
+      }
+      
+      $(function(){
+        
+        $.getJSON("/times.json", function(json) {
+          times = json;
+          
+          setInterval(checkTimes, 1000);
+          
+        });
+        
+      });
+    </script>
+    
+
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
       ga('create', 'UA-64171664-2', 'auto');
       ga('send', 'pageview');
-    
     </script>
+    
 
   </body>
 
