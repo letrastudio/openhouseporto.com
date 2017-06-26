@@ -2533,6 +2533,11 @@ section.time-section {
   padding: 1em 0;
   position: relative;
 }
+@media screen {
+  section.time-section {
+    padding: 3em 0;
+  }
+}
 section.time-section::after {
   clear: both;
   content: "";
@@ -2870,6 +2875,9 @@ a.top-link i {
   .place-header-info p {
     font-size: 1em !important;
   }
+}
+.place-header-info p.activity-subtitle {
+  color: #ffa300;
 }
 .place-header-info p:last-of-type {
   margin-bottom: 1.5em !important;
