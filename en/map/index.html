@@ -37,7 +37,7 @@
     
     
     
-    <link rel="stylesheet" href="/assets/css/style.min.css?1498692705890503373">
+    <link rel="stylesheet" href="/assets/css/style.min.css?1498693184618964038">
     <link rel="shortcut icon" href="/assets/site-icons/favicon-2017.ico">
     <link rel="apple-touch-icon-precomposed" href="/assets/site-icons/favicon-512.png">
     <meta name="apple-mobile-web-app-title" content="Open House">
@@ -167,13 +167,511 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 </header>
 
 
-<div class="page not-found">
+<div class="page map-page">
+  <div id="view1">
+    <script src="/assets/js/map.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+    <script src="/assets/js/richmarker-min.js"></script>
+    <script type="text/javascript">
+      var markers =
+        [
+          
+          
+          {
+            "lat": 41.1729,
+            "lng": -8.58713,
+            "number": "29",
+            "title": "1930 City Lodge",
+            "url": "/en/places/1930-city-lodge/"
+          },
+          
+          {
+            "lat": 41.15331,
+            "lng": -8.61357,
+            "number": "20",
+            "title": "D, Margarida Sousa Dias Inn",
+            "url": "/en/places/albergue-porto/"
+          },
+          
+          {
+            "lat": 41.16051,
+            "lng": -8.58079,
+            "number": "32",
+            "title": "Old Municipal Slaughterhouse of Porto",
+            "url": "/en/places/antigo-matadouro-industrial/"
+          },
+          
+          {
+            "lat": 41.12994,
+            "lng": -8.66713,
+            "number": "59",
+            "title": "Domus Aqua Apartments",
+            "url": "/en/places/apartamentos-domus-aqua/"
+          },
+          
+          {
+            "lat": 41.13848,
+            "lng": -8.60935,
+            "number": "50",
+            "title": "Oh! Porto Apartments",
+            "url": "/en/places/apartamentos-oh-porto/"
+          },
+          
+          {
+            "lat": 41.17763,
+            "lng": -8.5712,
+            "number": "30",
+            "title": "São João de Deus Neighbourhood",
+            "url": "/en/places/bairro-sao-joao-de-deus/"
+          },
+          
+          {
+            "lat": 41.15007,
+            "lng": -8.6107,
+            "number": "43",
+            "title": "Porto City Hall",
+            "url": "/en/places/camara-municipal-do-porto/"
+          },
+          
+          {
+            "lat": 41.13458,
+            "lng": -8.60114,
+            "number": "56",
+            "title": "São José Chapel",
+            "url": "/en/places/capela-sao-jose/"
+          },
+          
+          {
+            "lat": 41.17848,
+            "lng": -8.68694,
+            "number": "10",
+            "title": "Casa da Arquitectura - Real Vinícola",
+            "url": "/en/places/casa-da-arquitectura/"
+          },
+          
+          {
+            "lat": 41.15878,
+            "lng": -8.63071,
+            "number": "18",
+            "title": "Casa da Música",
+            "url": "/en/places/casa-da-musica/"
+          },
+          
+          {
+            "lat": 41.20301,
+            "lng": -8.71506,
+            "number": "1",
+            "title": "Boa Nova Tea House",
+            "url": "/en/places/casa-de-cha-da-boa-nova/"
+          },
+          
+          {
+            "lat": 41.15961,
+            "lng": -8.65648,
+            "number": "13",
+            "title": "Serralves House",
+            "url": "/en/places/casa-de-serralves/"
+          },
+          
+          {
+            "lat": 41.15119,
+            "lng": -8.62134,
+            "number": "21",
+            "title": "Rosário House",
+            "url": "/en/places/casa-do-rosario/"
+          },
+          
+          {
+            "lat": 41.165,
+            "lng": -8.60102,
+            "number": "26",
+            "title": "Lindo Vale House",
+            "url": "/en/places/casa-lindo-vale/"
+          },
+          
+          {
+            "lat": 41.12871,
+            "lng": -8.61142,
+            "number": "57",
+            "title": "Teixeira Lopes Museum House",
+            "url": "/en/places/casa-museu-teixeira-lopes/"
+          },
+          
+          {
+            "lat": 41.14157,
+            "lng": -8.61117,
+            "number": "49",
+            "title": "Escada das Verdades House",
+            "url": "/en/places/casa-na-escada-das-verdades/"
+          },
+          
+          {
+            "lat": 41.10711,
+            "lng": -8.65556,
+            "number": "60",
+            "title": "Madalena House",
+            "url": "/en/places/casa-na-madalena/"
+          },
+          
+          {
+            "lat": 41.16547,
+            "lng": -8.65464,
+            "number": "15",
+            "title": "Ricardo Pinto House",
+            "url": "/en/places/casa-ricardo-pinto/"
+          },
+          
+          {
+            "lat": 41.14548,
+            "lng": -8.62038,
+            "number": "22",
+            "title": "Houses at Bandeirinha Street",
+            "url": "/en/places/casas-bandeirinha/"
+          },
+          
+          {
+            "lat": 41.15757,
+            "lng": -8.60717,
+            "number": "40",
+            "title": "Fonte Parda Houses",
+            "url": "/en/places/casas-da-fonte-parda/"
+          },
+          
+          {
+            "lat": 41.18759,
+            "lng": -8.68879,
+            "number": "7",
+            "title": "Patio Houses",
+            "url": "/en/places/casas-patio/"
+          },
+          
+          {
+            "lat": 41.1455,
+            "lng": -8.5959,
+            "number": "36",
+            "title": "Prado do Repouso Cemetery",
+            "url": "/en/places/cemiterio-prado-repouso/"
+          },
+          
+          {
+            "lat": 41.16514,
+            "lng": -8.60443,
+            "number": "25",
+            "title": "Center of Blood and Transplantation",
+            "url": "/en/places/centro-de-sangue/"
+          },
+          
+          {
+            "lat": 41.14799,
+            "lng": -8.61067,
+            "number": "44",
+            "title": "CGD / Culturgest",
+            "url": "/en/places/cgd-culturgest/"
+          },
+          
+          {
+            "lat": 41.15009,
+            "lng": -8.60336,
+            "number": "39",
+            "title": "Two house for S",
+            "url": "/en/places/duas-casas-para-s/"
+          },
+          
+          {
+            "lat": 41.15187,
+            "lng": -8.6064,
+            "number": "41",
+            "title": "DKW Building",
+            "url": "/en/places/edificio-dkw/"
+          },
+          
+          {
+            "lat": 41.18512,
+            "lng": -8.69261,
+            "number": "5",
+            "title": "ESAD Idea",
+            "url": "/en/places/esad-idea/"
+          },
+          
+          {
+            "lat": 41.18969,
+            "lng": -8.62986,
+            "number": "12",
+            "title": "Padrão da Légua School",
+            "url": "/en/places/escola-padrao-da-legua/"
+          },
+          
+          {
+            "lat": 41.14925,
+            "lng": -8.64945,
+            "number": "16",
+            "title": "Aleixo Offices",
+            "url": "/en/places/escritorios-do-aleixo/"
+          },
+          
+          {
+            "lat": 41.14861,
+            "lng": -8.58739,
+            "number": "33",
+            "title": "Mira and Mirafórum Space",
+            "url": "/en/places/espaco-mira/"
+          },
+          
+          {
+            "lat": 41.14856,
+            "lng": -8.59853,
+            "number": "38",
+            "title": "Campo 24 de Agosto Metro Station",
+            "url": "/en/places/estacao-metro-24-agosto/"
+          },
+          
+          {
+            "lat": 41.16175,
+            "lng": -8.58305,
+            "number": "31",
+            "title": "Dragão Stadium",
+            "url": "/en/places/estadio-do-dragao/"
+          },
+          
+          {
+            "lat": 41.17573,
+            "lng": -8.59844,
+            "number": "24",
+            "title": "Economy Faculty of the University of Porto",
+            "url": "/en/places/faculdade-de-economia/"
+          },
+          
+          {
+            "lat": 41.2014,
+            "lng": -8.71181,
+            "number": "2",
+            "title": "Leça da Palmeira Lighthouse",
+            "url": "/en/places/farol-de-leca-da-palmeira/"
+          },
+          
+          {
+            "lat": 41.14826,
+            "lng": -8.58768,
+            "number": "35",
+            "title": "Housing in Miraflor",
+            "url": "/en/places/habitacao-miraflor/"
+          },
+          
+          {
+            "lat": 41.17004,
+            "lng": -8.58989,
+            "number": "28",
+            "title": "Conde Ferreira Hospital",
+            "url": "/en/places/hospital-conde-ferreira/"
+          },
+          
+          {
+            "lat": 41.17541,
+            "lng": -8.60321,
+            "number": "23",
+            "title": "i3s",
+            "url": "/en/places/i3s/"
+          },
+          
+          {
+            "lat": 41.14218,
+            "lng": -8.61276,
+            "number": "48",
+            "title": "São Lourenço Church",
+            "url": "/en/places/igreja-sao-lourenco/"
+          },
+          
+          {
+            "lat": 41.14321,
+            "lng": -8.59884,
+            "number": "37",
+            "title": "S. Vítor Street Island",
+            "url": "/en/places/ilha-rua-sao-vitor/"
+          },
+          
+          {
+            "lat": 41.13867,
+            "lng": -8.60277,
+            "number": "53",
+            "title": "Geophysical Institute",
+            "url": "/en/places/instituto-geofisico/"
+          },
+          
+          {
+            "lat": 41.13684,
+            "lng": -8.59562,
+            "number": "54",
+            "title": "Eng. Edgar Cardoso Laboratory",
+            "url": "/en/places/laboratorio-edgar-cardoso/"
+          },
+          
+          {
+            "lat": 41.14835,
+            "lng": -8.58762,
+            "number": "34",
+            "title": "Loft Miraflor",
+            "url": "/en/places/loft-miraflor/"
+          },
+          
+          {
+            "lat": 41.187,
+            "lng": -8.69309,
+            "number": "6",
+            "title": "Matosinhos Market",
+            "url": "/en/places/mercado-de-matosinhos/"
+          },
+          
+          {
+            "lat": 41.13816,
+            "lng": -8.60813,
+            "number": "51",
+            "title": "Serra do Pilar Monastery",
+            "url": "/en/places/mosteiro-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.14211,
+            "lng": -8.61178,
+            "number": "47",
+            "title": "Episcopal Palace",
+            "url": "/en/places/paco-episcopal/"
+          },
+          
+          {
+            "lat": 41.18345,
+            "lng": -8.6829,
+            "number": "9",
+            "title": "Visconde de Trevões Palace",
+            "url": "/en/places/palacete-visconde-de-trevoes/"
+          },
+          
+          {
+            "lat": 41.149,
+            "lng": -8.60815,
+            "number": "42",
+            "title": "Bolhão Palace",
+            "url": "/en/places/palacio-do-bolhao/"
+          },
+          
+          {
+            "lat": 41.16157,
+            "lng": -8.60001,
+            "number": "27",
+            "title": "Luso Residential Park",
+            "url": "/en/places/parque-residencial-do-luso/"
+          },
+          
+          {
+            "lat": 41.19305,
+            "lng": -8.70732,
+            "number": "3",
+            "title": "Tidal Swimming Pool",
+            "url": "/en/places/piscina-das-mares/"
+          },
+          
+          {
+            "lat": 41.21255,
+            "lng": -8.65946,
+            "number": "11",
+            "title": "PMO and PCC of Metro do Porto",
+            "url": "/en/places/pmo-e-pcc-metro-do-porto/"
+          },
+          
+          {
+            "lat": 41.13531,
+            "lng": -8.60062,
+            "number": "55",
+            "title": "São João Bridge",
+            "url": "/en/places/ponte-sao-joao/"
+          },
+          
+          {
+            "lat": 41.13704,
+            "lng": -8.60669,
+            "number": "52",
+            "title": "Serra do Pilar Barrack",
+            "url": "/en/places/quartel-da-serra-do-pilar/"
+          },
+          
+          {
+            "lat": 41.18541,
+            "lng": -8.68492,
+            "number": "8",
+            "title": "Four Houses",
+            "url": "/en/places/quatro-casas/"
+          },
+          
+          {
+            "lat": 41.17046,
+            "lng": -8.63117,
+            "number": "17",
+            "title": "Prelada House and Farm",
+            "url": "/en/places/quinta-da-prelada/"
+          },
+          
+          {
+            "lat": 41.16273,
+            "lng": -8.65963,
+            "number": "14",
+            "title": "Ferreira Group Offices",
+            "url": "/en/places/sede-ferreira-construcoes/"
+          },
+          
+          {
+            "lat": 41.15475,
+            "lng": -8.6172,
+            "number": "19",
+            "title": "Architects Association - North Regional Offices",
+            "url": "/en/places/sede-ordem-arquitectos/"
+          },
+          
+          {
+            "lat": 41.14466,
+            "lng": -8.60745,
+            "number": "46",
+            "title": "S. João National Theatre + TNSJ Workshops",
+            "url": "/en/places/teatro-oficinas/"
+          },
+          
+          {
+            "lat": 41.17725,
+            "lng": -8.70189,
+            "number": "4",
+            "title": "Cruise Terminal of the Port of Leixões",
+            "url": "/en/places/terminal-de-cruzeiros-do-porto-de-leixoes/"
+          },
+          
+          {
+            "lat": 41.11312,
+            "lng": -8.59825,
+            "number": "58",
+            "title": "PT Tower",
+            "url": "/en/places/torre-pt/"
+          },
+          
+          {
+            "lat": 41.14542,
+            "lng": -8.60988,
+            "number": "45",
+            "title": "Tunnel S. Bento - Campanhã",
+            "url": "/en/places/tunel-sao-bento-campanha/"
+          }
+          
+          
+        ];
+      var centerLat = 41.14753;
+      var centerLng = -8.636337;
 
-<h3>Coming soon.</h3>
-<p>Back to the <a href="/">Homepage</a>.</p>
+      window.onload = initMap;
+    </script>
+    <div id="map" style="width: 100%;"></div>
+  </div>
+  
+  
+  <p><a href="/uploads/openhouseporto2016-mapa.pdf" class="map-download" target="_blank">Download the Map as a PDF&nbsp;&#10132;</a></p>
+  
 
 </div>
-
 
 
 
