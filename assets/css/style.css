@@ -659,7 +659,7 @@ body {
 }
 @media print {
   body {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -2530,13 +2530,8 @@ a.link-share:hover i[class$="white"] {
 section.time-section {
   border-top: 1px solid #ffa300;
   margin: 0;
-  padding: 1em 0;
+  padding: 3em 0;
   position: relative;
-}
-@media screen {
-  section.time-section {
-    padding: 3em 0;
-  }
 }
 section.time-section::after {
   clear: both;
@@ -2591,6 +2586,7 @@ section.time-section .timetable-list ul div {
   line-height: 1.25;
 }
 section.time-section .timetable-visit-type {
+  display: none;
   width: 100%;
   margin-bottom: 1em;
 }
@@ -2608,6 +2604,9 @@ section.time-section .timetable-visit-type::after {
 }
 section.time-section .timetable-visit-type:last-child {
   margin-bottom: 0;
+}
+section.time-section .timetable-visit-type.visible {
+  display: block;
 }
 section.time-section h3 {
   margin: 0 0 0.25em;
@@ -2667,11 +2666,6 @@ section.time-section li a .place-number {
 }
 .header-page.sticky-header .sub-nav {
   display: none;
-}
-
-.header-page.timetable,
-.timetable-day#sat {
-  border-bottom: 3px solid #ffa300;
 }
 
 a.top-link {
@@ -2742,6 +2736,123 @@ a.top-link i {
   display: inline-block;
 }
 
+.timetable-filter {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+@media all and (min-width: 30em) {
+  .timetable-filter {
+    columns: 2;
+  }
+}
+@media all and (min-width: 57em) {
+  .timetable-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.timetable-filter label {
+  margin: 0;
+}
+.timetable-filter input[type=checkbox]:not(:checked) ~ span {
+  opacity: 0.6;
+}
+.timetable-filter h4 {
+  display: none;
+}
+
+@media print {
+  section.time-section {
+    padding: 1em 0;
+    border-top: 1px solid #ffa300;
+  }
+  section.time-section:last-child {
+    border-bottom: 1px solid #ffa300;
+  }
+  section.time-section h2 {
+    font-size: 1.5em;
+    width: 14%;
+  }
+  section.time-section .timetable-list {
+    width: 85%;
+  }
+  section.time-section .timetable-list li {
+    page-break-inside: avoid;
+    padding: 0;
+  }
+  section.time-section .timetable-visit-type {
+    width: 33.3333333%;
+    float: left;
+    padding-right: 1em;
+  }
+
+  .timetable-layout {
+    background: none;
+  }
+  .timetable-layout .site-header {
+    padding: 0 !important;
+  }
+  .timetable-layout .header-wrapper {
+    max-width: none !important;
+  }
+  .timetable-layout .openhouse-title a {
+    font-size: 1.5em;
+    color: #10069f !important;
+  }
+  .timetable-layout .openhouse-date {
+    font-size: 1.5em;
+    color: #ffa300 !important;
+  }
+  .timetable-layout .page-content {
+    padding: 0;
+  }
+  .timetable-layout .top-link {
+    display: none;
+  }
+  .timetable-layout .timetable,
+  .timetable-layout .timetable-filter,
+  .timetable-layout .site-nav,
+  .timetable-layout .menu-toggle,
+  .timetable-layout .site-footer {
+    display: none;
+  }
+  .timetable-layout .sticky {
+    position: static !important;
+    top: auto !important;
+  }
+  .timetable-layout .place-number {
+    padding: 0 !important;
+    text-align: left !important;
+    background: none !important;
+    color: #10069f !important;
+    min-width: 1.25em !important;
+  }
+  .timetable-layout #sat,
+  .timetable-layout #sun {
+    padding-top: 0;
+  }
+
+  .timetable-day .page {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .timetable-day .page > * {
+    max-width: none;
+  }
+
+  .timetable-day .header-page {
+    background: none;
+    color: #10069f;
+    font-size: 1.5em;
+    border-top: 2px solid #10069f;
+  }
+
+  #sun-wrapper {
+    page-break-before: always;
+  }
+}
 .place-header,
 .place-content,
 .place-footer {
