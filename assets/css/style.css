@@ -2762,13 +2762,17 @@ a.top-link i {
   display: none;
 }
 
+.day-label {
+  display: none;
+}
+
 @media print {
   section.time-section {
     padding: 1em 0;
     border-top: 1px solid #ffa300;
   }
   section.time-section:last-child {
-    border-bottom: 1px solid #ffa300;
+    margin-bottom: 4em;
   }
   section.time-section h2 {
     font-size: 1.5em;
@@ -2849,8 +2853,11 @@ a.top-link i {
     border-top: 2px solid #10069f;
   }
 
-  #sun-wrapper {
-    page-break-before: always;
+  .day-label {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffa300;
   }
 }
 .place-header,
