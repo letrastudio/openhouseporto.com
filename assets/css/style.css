@@ -948,9 +948,9 @@ blockquote {
   .default-text-content {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 65.67164%;
-    margin-left: 17.16418%;
+    margin-right: 2.9850746269%;
+    width: 65.671641791%;
+    margin-left: 17.1641791045%;
   }
   .default-text-content:last-child {
     margin-right: 0;
@@ -963,7 +963,7 @@ blockquote {
   .get-involved.default-text-content {
     float: left;
     display: block;
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
     width: 100%;
     margin-left: 0%;
   }
@@ -977,8 +977,8 @@ blockquote {
   .about.partners-banner {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .about.partners-banner:last-child {
     margin-right: 0;
@@ -1078,9 +1078,15 @@ blockquote {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
   float: left;
   width: 47.5%;
   margin-bottom: 5%;
+}
+.photo-gallery .photo-thumbnail img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
 }
 .photo-gallery .photo-thumbnail:before {
   display: block;
@@ -1736,8 +1742,8 @@ a.link-share:hover i[class$="white"] {
 .site-footer .contact-link a {
   border-bottom: 2px solid;
 }
-.site-footer .footer-copyright {
-  margin-bottom: 0.5em;
+.site-footer .footer-copyright small {
+  display: block;
 }
 .site-footer .footer-bitbasement > * {
   vertical-align: middle;
@@ -1863,8 +1869,8 @@ a.link-share:hover i[class$="white"] {
   .footer-partners {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 65.67164%;
+    margin-right: 2.9850746269%;
+    width: 65.671641791%;
   }
   .footer-partners:last-child {
     margin-right: 0;
@@ -1873,8 +1879,8 @@ a.link-share:hover i[class$="white"] {
   .footer-info {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .footer-info:last-child {
     margin-right: 0;
@@ -1884,6 +1890,37 @@ a.link-share:hover i[class$="white"] {
     text-align: right;
   }
 }
+.previous-editions {
+  margin: 1em 0;
+  color: white;
+}
+@media all and (min-width: 64em) {
+  .previous-editions {
+    text-align: right;
+  }
+}
+.previous-editions h4 {
+  margin: 0;
+  font-weight: normal;
+}
+@media all and (min-width: 40em) {
+  .previous-editions h4 {
+    display: inline;
+  }
+  .previous-editions h4:after {
+    content: ": ";
+  }
+}
+.previous-editions ul, .previous-editions li {
+  display: inline;
+}
+.previous-editions li + li:before {
+  content: "• ";
+}
+.previous-editions a {
+  border-bottom: 2px solid;
+}
+
 .hero-page {
   padding: 0 !important;
   border-bottom: 0.5em solid #fff;
@@ -2098,7 +2135,7 @@ a.link-share:hover i[class$="white"] {
 .places-nav > div {
   float: left;
   display: block;
-  margin-right: 2.98507%;
+  margin-right: 2.9850746269%;
   width: 100%;
 }
 .places-nav > div:last-child {
@@ -2108,7 +2145,7 @@ a.link-share:hover i[class$="white"] {
   .places-nav > div {
     float: left;
     display: block;
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
     width: 100%;
   }
   .places-nav > div:last-child {
@@ -2119,8 +2156,8 @@ a.link-share:hover i[class$="white"] {
   .places-nav > div {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 48.50746%;
+    margin-right: 2.9850746269%;
+    width: 48.5074626866%;
     margin-bottom: 0;
   }
   .places-nav > div:last-child {
@@ -2348,8 +2385,8 @@ a.link-share:hover i[class$="white"] {
   margin-bottom: 5%;
   float: left;
   display: block;
-  margin-right: 2.98507%;
-  width: 48.50746%;
+  margin-right: 2.9850746269%;
+  width: 48.5074626866%;
 }
 .tag-section .place-thumb-container:last-child {
   margin-right: 0;
@@ -2364,11 +2401,11 @@ a.link-share:hover i[class$="white"] {
   .tag-section .place-thumb-container {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .tag-section .place-thumb-container:nth-child(2n) {
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
   }
   .tag-section .place-thumb-container:nth-child(2n+1) {
     clear: none;
@@ -2388,11 +2425,11 @@ a.link-share:hover i[class$="white"] {
     margin-bottom: 3.75%;
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 22.76119%;
+    margin-right: 2.9850746269%;
+    width: 22.7611940299%;
   }
   .tag-section .place-thumb-container:nth-child(3n) {
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
   }
   .tag-section .place-thumb-container:nth-child(3n+1) {
     clear: none;
@@ -2412,7 +2449,7 @@ a.link-share:hover i[class$="white"] {
   margin-bottom: 5%;
   float: left;
   display: block;
-  margin-right: 2.98507%;
+  margin-right: 2.9850746269%;
   width: 100%;
 }
 .activity-list .tag-section .place-thumb-container:last-child {
@@ -2426,11 +2463,11 @@ a.link-share:hover i[class$="white"] {
     margin-bottom: 3.25%;
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 48.50746%;
+    margin-right: 2.9850746269%;
+    width: 48.5074626866%;
   }
   .activity-list .tag-section .place-thumb-container:nth-child(n) {
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
   }
   .activity-list .tag-section .place-thumb-container:nth-child(n+1) {
     clear: none;
@@ -2938,8 +2975,8 @@ a.top-link i {
   .place-content {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 65.67164%;
+    margin-right: 2.9850746269%;
+    width: 65.671641791%;
     border-bottom: 0;
   }
   .place-content:last-child {
@@ -2951,7 +2988,7 @@ a.top-link i {
     display: block;
     float: left;
     display: block;
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
     width: 100%;
   }
   .place-content::after {
@@ -2968,8 +3005,8 @@ a.top-link i {
   .place-footer {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .place-footer:last-child {
     margin-right: 0;
@@ -2980,7 +3017,7 @@ a.top-link i {
     display: block;
     float: left;
     display: block;
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
     width: 100%;
   }
   .place-footer::after {
@@ -2996,8 +3033,8 @@ a.top-link i {
   .place-footer .place-info:first-child {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .place-footer .place-info:first-child:last-child {
     margin-right: 0;
@@ -3007,8 +3044,8 @@ a.top-link i {
   .place-footer .place-info:nth-child(2) {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 65.67164%;
+    margin-right: 2.9850746269%;
+    width: 65.671641791%;
   }
   .place-footer .place-info:nth-child(2):last-child {
     margin-right: 0;
@@ -3018,7 +3055,7 @@ a.top-link i {
 .place-header-info {
   float: left;
   display: block;
-  margin-right: 2.98507%;
+  margin-right: 2.9850746269%;
   width: 100%;
   text-align: left;
 }
@@ -3030,8 +3067,8 @@ a.top-link i {
     text-align: left;
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .place-header-info:last-child {
     margin-right: 0;
@@ -3104,7 +3141,7 @@ a.top-link i {
   background-color: #eee;
   float: left;
   display: block;
-  margin-right: 2.98507%;
+  margin-right: 2.9850746269%;
   width: 100%;
 }
 .place-header-image:before {
@@ -3120,8 +3157,8 @@ a.top-link i {
   .place-header-image {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 65.67164%;
+    margin-right: 2.9850746269%;
+    width: 65.671641791%;
   }
   .place-header-image:last-child {
     margin-right: 0;
@@ -3174,7 +3211,7 @@ a.top-link i {
   .place-info-group {
     float: left;
     display: block;
-    margin-right: 4.54545%;
+    margin-right: 4.5454545455%;
     width: 100%;
   }
   .place-info-group:last-child {
@@ -3185,11 +3222,11 @@ a.top-link i {
   .place-info-group {
     float: left;
     display: block;
-    margin-right: 2.98507%;
-    width: 31.34328%;
+    margin-right: 2.9850746269%;
+    width: 31.3432835821%;
   }
   .place-info-group:nth-child(2n) {
-    margin-right: 2.98507%;
+    margin-right: 2.9850746269%;
   }
   .place-info-group:nth-child(2n+1) {
     clear: none;
