@@ -498,7 +498,7 @@ button {
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
 button:hover,
 button:focus {
-  background-color: #e69300;
+  background-color: rgb(204,130,0);
   color: #fff;
 }
 button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
@@ -550,7 +550,7 @@ textarea {
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select[multiple=multiple]:hover,
 textarea:hover {
-  border-color: #e69300;
+  border-color: rgb(204,130,0);
 }
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select[multiple=multiple]:focus,
@@ -685,7 +685,7 @@ a {
   transition: color 0.1s linear;
 }
 a:active, a:focus, a:hover {
-  color: #0d057f;
+  color: rgb(0,0,0);
 }
 
 hr {
@@ -791,7 +791,7 @@ blockquote {
   border-bottom: 2px solid #10069f;
 }
 .page a:hover {
-  border-bottom-color: #0d057f;
+  border-bottom-color: rgb(0,0,0);
   transition: all 0.1s linear;
 }
 
@@ -1161,8 +1161,8 @@ a.link-button:hover, a.link-button:focus {
   text-shadow: none;
 }
 a.link-button.disabled {
-  background-color: #e69300;
-  border-color: #e69300;
+  background-color: rgb(204,130,0);
+  border-color: rgb(204,130,0);
   color: #fff;
   cursor: not-allowed;
   text-shadow: none;
@@ -1892,7 +1892,7 @@ a.link-share:hover i[class$="white"] {
 }
 .previous-editions {
   margin: 1em 0;
-  color: white;
+  color: #fff;
 }
 @media all and (min-width: 64em) {
   .previous-editions {
@@ -2712,7 +2712,7 @@ section.time-section li a {
   color: #000000;
 }
 section.time-section li a:hover {
-  color: #0d057f;
+  color: rgb(0,0,0);
 }
 section.time-section li a .place-number {
   margin-right: 0.5em;
